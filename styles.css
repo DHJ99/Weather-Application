@@ -51,7 +51,7 @@ h1 {
     gap: 1.5rem;
 }
 .weather-card {
-    background: rgba(204, 203, 203, 0.863);
+    background: rgb(235, 232, 232);
     border-radius: 30px;
     padding: 1.5rem;
     box-shadow: 10px 20px 100px rgba(0, 0, 0, 0.1);
