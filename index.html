@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherPro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WeatherPro</h1>
+        </header>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="weather-grid">
+            <div class="weather-card" id="current-weather">
+                <h2>Current Weather</h2>
+                <div id="current-weather-content"></div>
+                <div class="extra-info">
+                    <div>
+                        <p>UV Index</p>
+                        <p id="uv-index"></p>
+                    </div>
+                    <div>
+                        <p>Air Quality</p>
+                        <p id="air-quality"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-card">
+                <h2>Hourly Forecast</h2>
+                <div class="chart-container">
+                    <canvas id="hourly-chart"></canvas>
+                </div>
+            </div>
+            <div class="weather-card">
+                <h2>7 - Day Forecast</h2>
+                <div id="weekly-forecast"></div>
+            </div>
+            <div class="weather-card">
+                <h2>Weather Map</h2>
+                <div id="weather-map"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
